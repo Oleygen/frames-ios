@@ -1,6 +1,6 @@
 import UIKit
 
-class SchemeIconsStackView: UIStackView {
+public class SchemeIconsStackView: UIStackView {
 
     var shouldSetupConstraints = true
 
