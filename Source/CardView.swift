@@ -55,7 +55,7 @@ public class CardView: UIView {
     }
 
     /// Initializes and returns a newly  allocated card view with the specified input states.
-    init(cardHolderNameState: InputState, billingDetailsState: InputState) {
+    public init(cardHolderNameState: InputState, billingDetailsState: InputState) {
         self.cardHolderNameState = cardHolderNameState
         self.billingDetailsState = billingDetailsState
         super.init(frame: .zero)
