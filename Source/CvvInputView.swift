@@ -7,7 +7,7 @@ import UIKit
     // MARK: - Properties
 
     let maxLengthCvv = 4
-    var cardType: CardType?
+    public var cardType: CardType?
     /// Text field delegate
     public weak var delegate: UITextFieldDelegate?
     public weak var onChangeDelegate: CvvInputViewDelegate?
