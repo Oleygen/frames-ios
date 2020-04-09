@@ -9,7 +9,7 @@ public class CardView: UIView {
     let scrollView = UIScrollView()
     let contentView = UIView()
     let stackView = UIStackView()
-    let schemeIconsStackView = SchemeIconsStackView()
+    public let schemeIconsStackView = SchemeIconsStackView()
     let addressTapGesture = UITapGestureRecognizer()
 
     /// Accepted Card Label
