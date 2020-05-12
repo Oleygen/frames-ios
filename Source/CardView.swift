@@ -150,6 +150,6 @@ public class CardView: UIView {
         stackView.trailingAnchor.constraint(equalTo: contentView.safeTrailingAnchor, constant: -8).isActive = true
         stackView.topAnchor.constraint(equalTo: schemeIconsStackView.safeBottomAnchor, constant: 16).isActive = true
         stackView.leadingAnchor.constraint(equalTo: contentView.safeLeadingAnchor, constant: 8).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: contentView.safeBottomAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: contentView.safeBottomAnchor, constant: -16).isActive = true
     }
 }
