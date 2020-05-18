@@ -70,8 +70,7 @@ public class ThreedsWebViewController: UIViewController,
     /// Called when a web view receives a server redirect.
     public func webView(_ webView: WKWebView,
                         didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
-        // stop the redirection
-        webView.stopLoading()
+        
         shouldDismiss(absoluteUrl: webView.url!)
     }
 
