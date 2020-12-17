@@ -13,4 +13,9 @@ public protocol CardNumberInputViewDelegate: class {
     ///
     /// - parameter view: View containing the text field
     func textFieldDidEndEditing(view: UIView)
+    
+    
+    /// Trully called when the card number changed without taking in account card type
+    
+    func onChangeCardNumber()
 }

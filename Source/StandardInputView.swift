@@ -149,4 +149,12 @@ import UIKit
         heightConstraint.constant = 48
         layoutIfNeeded()
     }
+    
+    public func setNextButtonEnable(value: Bool) {
+        guard let toolbar = self.textField.inputAccessoryView as? UIToolbar else { return }
+        guard let nextButton = toolbar.items?.first(where: {$0.tag == 2}) else {
+            return
+        }
+        nextButton.isEnabled = value
+    }
 }

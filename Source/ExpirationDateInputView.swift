@@ -3,6 +3,8 @@ import UIKit
 /// Expiration Date Input View containing a label and an input field.
 /// Uses the `ExpirationDatePicker` as the input keyboard.
 @IBDesignable public class ExpirationDateInputView: StandardInputView, ExpirationDatePickerDelegate {
+    
+    public weak var delegate: ExpirationDatePickerDelegate?
 
     // MARK: - Initialization
 
@@ -30,5 +32,6 @@ import UIKit
 
     public func onDateChanged(month: String, year: String) {
         textField.text = "\(month)/\(year.substring(with: NSRange(location: 2, length: 2)))"
+        delegate?.onDateChanged(month: month, year: year)
     }
 }

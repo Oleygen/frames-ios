@@ -59,6 +59,7 @@ import UIKit
 
     /// Called when the text changed.
     @objc public func textFieldDidChange(textField: UITextField) {
+        delegate?.onChangeCardNumber()
         var targetCursorPosition = 0
         if let startPosition = textField.selectedTextRange?.start {
             targetCursorPosition = textField.offset(from: textField.beginningOfDocument, to: startPosition)

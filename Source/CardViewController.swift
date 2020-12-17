@@ -277,6 +277,8 @@ public class CardViewController: UIViewController,
     }
 
     // MARK: - CardNumberInputViewDelegate
+    
+    public func onChangeCardNumber() {}
 
     /// Called when the card number changed.
     public func onChangeCardNumber(cardType: CardType?) {

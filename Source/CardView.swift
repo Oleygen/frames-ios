@@ -11,6 +11,8 @@ public class CardView: UIView {
     let stackView = UIStackView()
     public let schemeIconsStackView = SchemeIconsStackView()
     let addressTapGesture = UITapGestureRecognizer()
+    var nextButton: UIBarButtonItem?
+    var prevButton: UIBarButtonItem?
 
     /// Accepted Card Label
     public let acceptedCardLabel = UILabel()
@@ -108,7 +110,7 @@ public class CardView: UIView {
         }
         addKeyboardToolbarNavigation(textFields: textFields)
     }
-
+    
     private func addViews() {
         addSubview(scrollView)
         scrollView.addSubview(contentView)
